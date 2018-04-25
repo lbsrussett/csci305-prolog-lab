@@ -1,0 +1,94 @@
+Laura Sullivan-Russett
+Prolog Lab Questions
+May 2, 2018
+
+1. What is the result of query: ?- father(X, 'Queen Elizabeth II').?
+	X = 'King George VI'.
+
+2. What is the result of query: ?- grandmother(X, 'Queen Elizabeth II').?
+	X = 'Queen Mary'. 
+
+3. What is the result of query: ?- grandfather(X, 'Queen Elizabeth II').?
+	X = 'King George V'.
+
+4. What is the result of query: ?- grandparent(X, 'Queen Elizabeth II').?
+	X = 'King George V' ;
+	X = 'Queen Mary'.
+
+5. What is the result of query: ?- grandparent('Queen Elizabeth II', X).?
+	X = 'Prince William' ;
+	X = 'Prince Henry'. 
+
+6. What is the result of query: ?- sibling(X, 'Queen Elizabeth II').?
+	X = 'Princess Margaret' 
+
+7. What is the result of query: ?- son(X, 'Queen Elizabeth II').?
+	X = 'Prince Charles' ;
+	X = 'Prince Andrew' ;
+	X = 'Prince Edward'.
+
+8. What is the result of query: ?- daughter(X, 'Queen Elizabeth II').?
+	X = 'Princess Anne'.
+
+9. What is the result of query: ?- aunt(X, 'Lady Diana Spencer').?
+	This query is false because Lady Diana was not born into the royal family, so there isn't any information on her family in the database.
+
+10. What is the result of query: ?- spouse(X, 'Prince William').?
+	X = 'Catherine Middleton'.
+
+11. What is the result of query: ?- ancestor(X, 'Prince Henry').?
+	X = 'Prince Charles' ;
+	X = 'Lady Diana Spencer' ;
+	X = 'Queen Elizabeth II' ;
+	X = 'Prince Philip' ;
+	X = 'King George VI' ;
+	X = 'Lady Elizabeth Bowes-Lyon' ;
+	X = 'King George V' ;
+	X = 'Queen Mary' ;
+	X = 'King Edward VII' ;
+	X = 'Princess Alexandra of Denmark' ;
+	X = 'Prince Albert' ;
+	X = 'Queen Victoria'.
+
+12. What is the result of query: ?- descendant('Queen Victoria', Y).?
+	This query is false because Queen Victoria is the first royal listed in the database and there isn't any information about her ancestors in it.
+
+13. What is the result of query: ?- older('Prince Henry', 'Prince William').?
+	This query is false because Prince Henry is not older than Prince William.  Prince William is the older brother.
+
+14. What is the result of query: ?- older(X, 'Queen Elizabeth II').?
+	X = 'Queen Victoria' ;
+	X = 'Princess Alexandra of Denmark' ;
+	X = 'Queen Mary' ;
+	X = 'Mrs Simpson' ;
+	X = 'Lady Elizabeth Bowes-Lyon' ;
+	X = 'Prince Albert' ;
+	X = 'King Edward VII' ;
+	X = 'King George V' ;
+	X = 'King Edward VIII' ;
+	X = 'King George VI' ;
+	X = 'Prince Philip'
+
+15. What is the result of query: ?- regentWhenBorn(X, 'Queen Elizabeth II').?
+	X = 'King George V'.
+
+EC1. X = 'Viscount Linley' ;
+	 X = 'Lady Sarah Chatto'.
+
+EC2. X = 'Viscount Linley' ;
+	 X = 'Lady Sarah Chatto'. 
+
+16. Name something you like about Prolog. Explain.
+	I really like how straightforward prolog is.  Once you understand how prolog unifies variables, writing rules becomes very easy and logical.
+
+17. Name something you dislike about Prolog. Explain.
+	Learning the completely different syntax of Prolog operators was challenging.  I also thought that the sytax error when an incorrect operator was used wasn't as useful as I wanted it to be.  It took me a while to realize that syntax error was telling me that I'd miss-typed something most of the time.  
+
+18. Did you enjoy this lab? Which aspects did you like and/or dislike?
+	I did enjoy this lab.  I liked the logical ways in which the rules were structured and how you could build on the previous rules with each new one.  Running a query and getting a correct answer was very satisfying.  I wished that there was more information in the database, but overall I really enjoyed the lab.
+
+19. Approximately how many hours did you spend on this lab?
+	I spent 4-5 hours on this lab.  Some of it was just learning to use Prolog properly and some of it was not understanding some of the errors that I was getting.  
+
+20. Do you think you will use Prolog again? For which type(s) of project(s)?
+	I'm not sure if I will use Prolog again.  I would welcome the chance if I had it, but I don't think it is very widely used for industry purposes.
